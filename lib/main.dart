@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main(){
+void main() {
   runApp(MyApp());
 }
 
@@ -30,23 +30,21 @@ class Home extends StatelessWidget {
           style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,
-            fontFamily:  "Times New Roman",
+            fontFamily: "Times New Roman",
           ),
         ),
       ),
-
       body: Center(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             SizedBox(height: 100),
             ElevatedButton(
-              onPressed: (){
+              onPressed: () {
                 showModalBottomSheet(
                     context: context,
                     shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8)
-                    ),
+                        borderRadius: BorderRadius.circular(8)),
                     isScrollControlled: true,
                     useSafeArea: true,
                     enableDrag: false,
@@ -73,8 +71,7 @@ class Home extends StatelessWidget {
                           Row()
                         ],
                       );
-                    }
-                );
+                    });
               },
               child: Text("Show Dialog"),
             ),
